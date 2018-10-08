@@ -48,6 +48,11 @@ PRODUCT_COPY_FILES += \
     device/asus/flo/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     device/asus/flo/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+    resize2fs_static \
+    e2fsck
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     bdAddrLoader \
